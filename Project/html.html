@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+        <head>
+            
+            
+
+
+        <title>Field Finder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="STYLE.css">
+        <script src="https://kit.fontawesome.com/2d5aced4bd.js" crossorigin="anonymous"></script>
+        
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+
+    </head>
+    
+        <body>
+            <script src="javascript.js"></script>
+            
+            
+            
+   
+
+
+
+
+
+
+         <div class="black-bar">
+                <a href="file:///C:/Users/hassa/OneDrive/Desktop/field/html.html">
+                    <IMG class="logo-image" src="LOGOO.png" alt="FIELD-FINDER">
+                </a>
+
+                <button id="login-button" class="login" onclick="loginbox()">LOGIN</button>
+
+
+
+
+
+                <button class="signup" onclick="signnbox()">SIGN UP!</button>
+
+            </div> 
+
+
+            <div></div>
+            <div>
+                <img src="img.png" alt="Image description" class="large-image">
+                <spans class="searchtext" id="lol">Field finder online in Jordan</span>
+                    <div class="searchdiv">
+                        <span class="iconsearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="search-bar" placeholder="Search for area, street name, landmark...">
+                    </div>
+            </div>
+
+
+            <div>
+                <img src="Appstore.png" class="appstore" >
+                <img src="Playstore.png" class=" Playstore" />
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closebox()">&times;</span>
+                    <form>
+
+                        <h1 class="loginh1">LOGIN</h1>
+
+
+                        <input type="text" placeholder="Phone number" id="lphonenumber" name="phonenumber" class="textbox"><br>
+
+                        <input type="password" placeholder="password" id="lpassword" name="password" class=" textbox"><br><br>
+
+                        <button type="submit" onclick="submitFormL()" class="logform">LOGIN</button>
+                    </form>
+                    <span class="no-account"> Don't have an account? </span>
+                    <span class="createacc" onclick="signnbox()">Create an account</span>
+
+                </div>
+            </div>
+
+            <div id="sign-modal" class="smodal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeboxs()">&times;</span>
+                    <form>
+
+                        <h1 class="loginh1">Sign up!</h1>
+
+
+                        <input type="text" placeholder="Phone number" id="sphonenumber" name="sphonenumber" class="textbox"><br>
+                        <input type="text" placeholder="Full Name" id="sfullname" name="sfullname" class="textbox"><br>
+
+                        <input type="password" placeholder="password" id="spassword" name="spassword" class=" textbox"><br><br>
+
+                        <button type="submit" onclick="submitForm()" class="logform">SIGN UP</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+
+
+         
+        </body>
+</html>

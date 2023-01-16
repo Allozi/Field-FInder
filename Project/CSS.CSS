@@ -1,0 +1,330 @@
+
+
+body, html{
+    padding:0;
+    margin: 0;
+    }
+    
+    
+    .black-bar {
+         display: inline-block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 15%;
+      background-color: black;
+      color: white;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    
+    .large-image {
+        width: 100%;
+        object-fit: contain;
+        padding-top: 100px;
+        display: flex;
+    }
+
+
+    .logo-image{
+        height:70px;
+        width: 380px;
+        position: absolute;
+          top:   30px;         
+          left: 100px;
+
+
+    }
+
+
+    .login {
+        font: small-caps bold 16px/1 sans-serif;       
+         border-radius: 6px;
+        position: absolute;
+          top: 25px;
+          right: 200px;
+        background:linear-gradient(-45deg , #60fd5e,#47da44, #13fe0f,#4bfe0f);
+         width:140px;
+         height:53px;
+         background-size: 400% 400%;
+         transition: 0s;
+         cursor: pointer;
+
+         
+
+         
+       
+    }
+    .loginh1{
+        font-size: 32px;
+        text-align: center;
+        font-family:sans-serif;
+        font-weight: 530;
+        font-style:normal;
+        color:black;
+        
+        
+    }
+
+    .login:hover{
+        top: 24px;
+          right: 199px;
+        width: 142px;
+         height:55px;
+        animation: animate 3s ease infinite;
+        filter: brightness(120%);
+    }
+    .logform{
+        position: absolute; /* Set the position to absolute */
+        font: small-caps bold 16px/1 sans-serif;       
+         border-radius: 6px;
+        position: absolute;
+          border: 0px;
+        background:linear-gradient(-45deg , #60fd5e,#47da44, #13fe0f,#4bfe0f);
+         width:260px;
+         height:53px;
+         background-size: 400% 400%;
+         transition: 0s;
+         cursor: pointer;
+
+
+         bottom: 150px; /* Set the bottom position to 0 */
+         left: 0; /* Set the left position to 0 */
+         right: 0; /* Set the right position to 0 */
+         margin: auto; /* Center the button horizontally */
+
+                         
+
+    }
+    .textbox {
+        border: 0;
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        outline: none;
+    }
+    .no-account{
+        position: absolute; /* Set the position to absolute */
+
+        font-size: 14px;
+        text-align: center;
+        font-family:sans-serif;
+        font-weight: 530;
+        font-style:normal;
+        color:black;
+        bottom: 20px; /* Set the bottom position to 0 */
+        left: 0; /* Set the left position to 0 */
+        right: 100px; /* Set the right position to 0 */
+        margin: auto; /* Center the button horizontally */      
+    }
+
+    .createacc{
+        position: absolute; /* Set the position to absolute */
+        font-size: 14px;
+        text-align: center;
+        font-family:sans-serif;
+        font-weight: 530;
+        font-style:normal;
+        color:black;
+        bottom: 20px; /* Set the bottom position to 0 */
+        left: 166px; /* Set the left position to 0 */
+        right: 0; /* Set the right position to 0 */
+        margin: auto; /* Center the button horizontally */  
+        border: none; 
+        cursor: pointer;
+        color: #13fe0f;
+
+
+    }
+
+    
+    
+      
+    
+
+    @keyframes animate {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;        }
+        100% {
+            background-position: 0% 50%;        }
+      }
+
+    
+
+    .signup{
+       
+        font: small-caps bold 13px/1 sans-serif;       
+
+        position: absolute;
+        top: 26px;
+
+        right: 40px;
+        border-radius: 50px;
+        border: 2px solid;
+        border-image-slice: 1;
+      border-width: 3px;
+      border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+       background-color:black;
+       color:white;
+         width:140px;
+         height:51px;
+         transition: 0.1s;
+         cursor: pointer;
+
+    }
+    .signup:hover{
+        border: 4px solid;
+        border-image-slice: 1;
+        border-width: 4px;
+        border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+
+    }
+
+    .modal {
+        display: none;/* Hide the modal by default */
+        position: fixed; /* Make the modal appear on top of everything else */
+        z-index: 1; /* Set the z-index to a high value to ensure that it appears on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        
+        
+      }
+      .smodal{
+        display: none;/* Hide the modal by default */
+        position: fixed; /* Make the modal appear on top of everything else */
+        z-index: 1; /* Set the z-index to a high value to ensure that it appears on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+      }
+      
+      .modal-content {
+        position: relative; /* Set the position to relative */
+
+ 
+  
+        border-radius: 6px;
+
+        background-color: #fefefe;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 5%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 350px;
+        height: 500px; /* Set a fixed width */
+      }
+      
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+.searchtext {
+    position: absolute;
+    top: 180px; /* Set the top position */
+    left: 500px; /* Set the left position */
+    z-index: 1;
+    /* Set the position to absolute */
+    font-size: 32px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 530;
+    font-style: normal;
+    color: black;
+    font-weight: bold;
+}
+
+
+      .searchdiv{
+        background-color: white;
+        border: #888 solid 2px;
+        border-radius:10px ;
+        opacity: 80%;
+        
+      }
+
+.search-bar {
+    border: 0;
+    width: 320px;
+    height: 40px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    outline: none;
+    border-radius: 6px;
+    
+    font-size: 18px;
+}
+
+
+      .iconsearch{
+        position: fixed;
+        background-color: white;
+        padding-top: 8px;
+        padding-right: 10px;
+        align-items: center;
+        left: 510px;
+      }
+
+
+
+
+.appstore {
+    width: 13%;
+    height: 3%;
+    padding-top: 10%;
+    padding-left: 32%;
+}
+.Playstore {
+    margin-left:50px;
+    width: 13%;
+    height: 10%;
+}
+
+
+
+.banner-container {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      /* Hide the banner by default */
+      display: none;
+    }
+    /* The banner */
+    .banner {
+      background-color: green;
+      color: white;
+      padding: 200px;
+      text-align: center;
+    }
+    /* The animation for the banner */
+    @keyframes slideIn {
+      from {
+        top: -200px;
+      }
+      to {
+        top: 0;
+      }
+    }
+
